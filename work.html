@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Marta Ruiz</title>
+  <meta name="description" content="Case studies from Marta Ruiz — Senior Product Designer. Search, monetisation, and e-commerce at scale.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Marta Ruiz</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="work.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" style="padding-bottom: var(--space-16);">
+      <div class="container">
+        <p class="hero__eyebrow">Case studies</p>
+        <h1 class="hero__title serif" style="font-size: clamp(2rem, 5vw, 3rem);">Selected work</h1>
+        <p class="hero__subtitle" style="margin-bottom: 0;">
+          A focus on search and monetisation at Kroger — one of the US's largest grocery retailers — plus supporting projects. Each case study leads with business impact.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="work-grid">
+
+          <!-- ── Case study 1 ── -->
+          <article class="card">
+            <div class="card__thumb card__thumb--placeholder">🔍</div>
+            <div class="card__body">
+              <div class="card__tags">
+                <span class="tag">Search UX</span>
+                <span class="tag">E-commerce</span>
+                <span class="tag">A/B testing</span>
+              </div>
+              <h2 class="card__title">Redesigning Core Search at Kroger</h2>
+              <p class="card__desc">
+                Rebuilt the end-to-end search experience for tens of millions of users. Cut broad-query result sets by 80%, introduced inclusive filter chips, and shipped a coupons carousel — each grounded in user research.
+              </p>
+              <div class="card__metric">↓ 80% result set size · ↑ Add-to-cart &amp; filter engagement</div>
+              <a href="case-study.html" class="card__link">Read case study</a>
+            </div>
+          </article>
+
+          <!-- ── Case study 2 ── -->
+          <article class="card">
+            <div class="card__thumb card__thumb--placeholder">📣</div>
+            <div class="card__body">
+              <div class="card__tags">
+                <span class="tag">Monetisation</span>
+                <span class="tag">Ads</span>
+                <span class="tag">Mobile</span>
+              </div>
+              <h2 class="card__title">Sponsored Products &amp; Video Ad Formats</h2>
+              <p class="card__desc">
+                Sole designer on the Monetisation Ads team. Designed sponsored product carousels and a video ad format with screen-reader accessibility evaluation — shipped across web, iOS, and Android.
+              </p>
+              <div class="card__metric">High-impact revenue formats shipped at scale</div>
+              <a href="case-study.html" class="card__link">Read case study</a>
+            </div>
+          </article>
+
+          <!-- ── Case study 3 ── -->
+          <article class="card">
+            <div class="card__thumb card__thumb--placeholder">💰</div>
+            <div class="card__body">
+              <div class="card__tags">
+                <span class="tag">Research</span>
+                <span class="tag">Pricing</span>
+                <span class="tag">Roadmap</span>
+              </div>
+              <h2 class="card__title">Dynamic Pricing &amp; Ads Roadmap Research</h2>
+              <p class="card__desc">
+                Introduced real-time dynamic pricing in ad units. Ran a large-scale moderated study that directly shaped the ads roadmap and secured Director/VP alignment.
+              </p>
+              <div class="card__metric">Study findings adopted into the product roadmap</div>
+              <a href="case-study.html" class="card__link">Read case study</a>
+            </div>
+          </article>
+
+          <!-- ── Placeholder 4 — add when ready ── -->
+          <!-- Uncomment and fill in when you have the next case study
+          <article class="card">
+            <div class="card__thumb card__thumb--placeholder">📐</div>
+            <div class="card__body">
+              <div class="card__tags"><span class="tag">Design systems</span></div>
+              <h2 class="card__title">Case Study Title</h2>
+              <p class="card__desc">Description here.</p>
+              <div class="card__metric">Key metric</div>
+              <a href="case-study-2.html" class="card__link">Read case study</a>
+            </div>
+          </article>
+          -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="section">
+    <div class="container footer">
+      <span class="footer__copy">© 2026 Marta Ruiz</span>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav__hamburger');
+    const links = document.querySelector('.nav__links');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

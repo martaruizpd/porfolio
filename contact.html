@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Marta Ruiz</title>
+  <meta name="description" content="Get in touch with Marta Ruiz — Senior Product Designer based in Santander, Spain. Open to senior or lead roles.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Marta Ruiz</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta active">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container--narrow">
+        <p class="hero__eyebrow">Contact</p>
+        <h1 class="hero__title serif" style="font-size: clamp(2rem, 5vw, 3rem);">Let's talk.</h1>
+        <p class="hero__subtitle">
+          I'm open to senior or lead product design roles — full-time or contract, remote-friendly. Based in Santander, Spain (CET); experienced collaborating with US-based teams.
+        </p>
+
+        <div class="contact-links">
+
+          <a href="mailto:marta.ruizc@outlook.com" class="contact-link">
+            <span class="contact-link__icon">✉️</span>
+            <div>
+              <div class="contact-link__label">Email</div>
+              <div class="contact-link__value">marta.ruizc@outlook.com</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link__icon">💼</span>
+            <div>
+              <div class="contact-link__label">LinkedIn</div>
+              <div class="contact-link__value">linkedin.com/in/marta-ruiz-84880238 ↗</div>
+            </div>
+          </a>
+
+          <a href="https://martaruizcv.netlify.app/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link__icon">📄</span>
+            <div>
+              <div class="contact-link__label">CV / Résumé</div>
+              <div class="contact-link__value">martaruizcv.netlify.app ↗</div>
+            </div>
+          </a>
+
+          <!-- Uncomment when PDF is ready
+          <a href="marta-ruiz-cv.pdf" download class="contact-link">
+            <span class="contact-link__icon">⬇️</span>
+            <div>
+              <div class="contact-link__label">Download CV</div>
+              <div class="contact-link__value">marta-ruiz-cv.pdf</div>
+            </div>
+          </a>
+          -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="section">
+    <div class="container footer">
+      <span class="footer__copy">© 2026 Marta Ruiz</span>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav__hamburger');
+    const links = document.querySelector('.nav__links');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

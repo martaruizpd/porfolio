@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marta Ruiz — Senior Product Designer</title>
+  <meta name="description" content="Senior Product Designer with 10+ years in design, specialising in complex search and e-commerce at scale. Open to senior or lead roles.">
+  <meta property="og:title" content="Marta Ruiz — Senior Product Designer">
+  <meta property="og:description" content="10+ years in design. 5+ years at Kroger via Empathy.co. Search, monetisation, and e-commerce at scale.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Marta Ruiz</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="hero__eyebrow">Senior Product Designer</p>
+        <h1 class="hero__title serif">
+          Designing search &amp;<br>commerce at scale.
+        </h1>
+        <p class="hero__subtitle">
+          10+ years in design. 5+ years embedded in Kroger's product org — crafting search and monetisation experiences for tens of millions of customers. Now open to senior or lead roles where design has a real seat at the table.
+        </p>
+        <div class="hero__actions">
+          <a href="work.html" class="btn btn--primary">View my work</a>
+          <a href="about.html" class="btn btn--outline">About me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Selected work preview ── -->
+    <section class="section section--alt">
+      <div class="container">
+        <p class="section__label">Selected work</p>
+        <div class="work-grid">
+
+          <!-- Card 1 placeholder — replace with real case study link -->
+          <article class="card">
+            <div class="card__thumb card__thumb--placeholder">🔍</div>
+            <div class="card__body">
+              <div class="card__tags">
+                <span class="tag">Search</span>
+                <span class="tag">E-commerce</span>
+              </div>
+              <h3 class="card__title">Redesigning Core Search at Kroger</h3>
+              <p class="card__desc">Rebuilt the search experience for one of the US's largest grocery retailers — tens of millions of users across web and app.</p>
+              <div class="card__metric">↓ 80% broad-query result sets · ↑ Add-to-cart conversion</div>
+              <a href="case-study.html" class="card__link">Read case study</a>
+            </div>
+          </article>
+
+          <!-- Card 2 placeholder -->
+          <article class="card">
+            <div class="card__thumb card__thumb--placeholder">📣</div>
+            <div class="card__body">
+              <div class="card__tags">
+                <span class="tag">Monetisation</span>
+                <span class="tag">Ads</span>
+              </div>
+              <h3 class="card__title">Sponsored Products &amp; Video Ad Formats</h3>
+              <p class="card__desc">Sole designer on the Monetisation Ads team — owning ad format design end-to-end across web, iOS, and Android.</p>
+              <div class="card__metric">New revenue-driving formats shipped at scale</div>
+              <a href="case-study.html" class="card__link">Read case study</a>
+            </div>
+          </article>
+
+          <!-- Card 3 placeholder -->
+          <article class="card">
+            <div class="card__thumb card__thumb--placeholder">💰</div>
+            <div class="card__body">
+              <div class="card__tags">
+                <span class="tag">Research</span>
+                <span class="tag">Pricing</span>
+              </div>
+              <h3 class="card__title">Real-Time Dynamic Pricing in Ad Units</h3>
+              <p class="card__desc">Introduced dynamic pricing into ad units and ran a large-scale moderated study that directly shaped the ads roadmap.</p>
+              <div class="card__metric">Roadmap-defining research with Director/VP sign-off</div>
+              <a href="case-study.html" class="card__link">Read case study</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="margin-top: var(--space-12); text-align:center;">
+          <a href="work.html" class="btn btn--outline">See all work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Brief about strip ── -->
+    <section class="section">
+      <div class="container--narrow">
+        <p class="section__label">About</p>
+        <h2 class="section__heading serif">I connect user needs to business outcomes.</h2>
+        <p style="color: var(--color-text-muted); font-size: var(--text-lg); line-height: var(--leading-loose); margin-bottom: var(--space-8);">
+          For 5+ years I was embedded in Kroger's product org via Empathy.co — collaborating daily with US-based PMs, engineers, and senior stakeholders from Spain. My work spans research, rapid iteration, accessibility, and shipping at a scale where small improvements affect millions of people.
+        </p>
+        <a href="about.html" class="btn btn--outline">More about me</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="section">
+    <div class="container footer">
+      <span class="footer__copy">© 2026 Marta Ruiz</span>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const btn = document.querySelector('.nav__hamburger');
+    const links = document.querySelector('.nav__links');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+
+    // Highlight active nav link
+    document.querySelectorAll('.nav__links a').forEach(a => {
+      if (a.href === location.href) a.classList.add('active');
+    });
+  </script>
+</body>
+</html>
