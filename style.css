@@ -514,15 +514,15 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
 
 .cs-meta {
   display: flex;
-  gap: var(--space-12);
+  gap: var(--space-3) var(--space-8);
   flex-wrap: wrap;
-  padding: var(--space-6) var(--space-8);
+  padding: var(--space-4) var(--space-6);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
 }
 
-.cs-meta__item { display: flex; flex-direction: column; gap: var(--space-1); }
+.cs-meta__item { display: flex; flex-direction: column; gap: 2px; line-height: var(--leading-tight); }
 .cs-meta__label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-faint); font-weight: var(--weight-semibold); }
 .cs-meta__value { font-size: var(--text-sm); font-weight: var(--weight-semibold); color: var(--color-text); }
 
@@ -868,7 +868,7 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
 
   .contact-grid { grid-template-columns: 1fr; gap: var(--space-8); }
 
-  .cs-meta { gap: var(--space-6); padding: var(--space-6); }
+  .cs-meta { gap: var(--space-3) var(--space-6); }
 
   .footer { flex-direction: column; align-items: flex-start; }
 }
