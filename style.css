@@ -620,6 +620,41 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
   line-height: var(--leading-normal);
 }
 
+/* Collapsible "full details" block: keeps case studies skimmable */
+.cs-details {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  margin-top: var(--space-8);
+}
+.cs-details > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: var(--space-6) var(--space-8);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+.cs-details > summary::-webkit-details-marker { display: none; }
+.cs-details > summary::after {
+  content: '+';
+  font-size: var(--text-2xl);
+  line-height: 1;
+  color: var(--color-accent-text);
+}
+.cs-details[open] > summary::after { content: '\2212'; }
+.cs-details__body { padding: 0 var(--space-8) var(--space-8); }
+.cs-details__body h3 { margin-top: var(--space-8); margin-bottom: var(--space-4); font-size: var(--text-lg); }
+.cs-details__body h3:first-child { margin-top: 0; }
+.cs-details__body p,
+.cs-details__body li { color: var(--color-text-muted); line-height: var(--leading-loose); }
+.cs-details__body p + p,
+.cs-details__body p + ul { margin-top: var(--space-4); }
+.cs-details__body ul { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4); }
+
 /* ── Metrics strip ───────────────────────────────────────────── */
 .metrics {
   display: grid;
@@ -655,17 +690,19 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
 /* ── About page ──────────────────────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-12);
   align-items: start;
 }
 
 .about-photo {
   width: 100%;
-  aspect-ratio: 3/4;
+  max-width: 220px;
+  aspect-ratio: 1/1;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   object-fit: cover;
+  object-position: center 20%;
   background: var(--color-accent-soft);
 }
 
@@ -827,7 +864,7 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
   .work-grid { grid-template-columns: 1fr; }
 
   .about-grid { grid-template-columns: 1fr; gap: var(--space-8); }
-  .about-photo { aspect-ratio: 4/3; }
+  .about-photo { max-width: 160px; }
 
   .contact-grid { grid-template-columns: 1fr; gap: var(--space-8); }
 
