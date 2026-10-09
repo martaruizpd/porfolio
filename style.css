@@ -594,6 +594,20 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
 }
 video.cs-image { display: block; height: auto; background: var(--color-surface); }
 
+/* Labelled media: a short title above an image or video */
+.cs-figure { margin-block: var(--space-8); }
+.cs-figure__label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+.cs-figure .cs-image { margin-block: 0; }
+
 .cs-image--placeholder {
   aspect-ratio: 16/8;
   background: var(--color-accent-soft);
