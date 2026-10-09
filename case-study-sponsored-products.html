@@ -110,9 +110,9 @@
           The opportunity came from what competitors were doing: reach more customers and make ads catch their attention. Kroger already had some featured carousels live, but their layout needed rethinking to make sense on both web and mobile.
         </p>
 
-        <div class="cs-image cs-image--placeholder">
-          [ Add image — before: the existing featured carousels, or competitor examples ]
-        </div>
+        <video class="cs-image" src="images/sponsored-before.mp4" poster="images/sponsored-before-poster.jpg"
+               autoplay muted loop playsinline controls preload="metadata"
+               aria-label="Screen recording of the previous Kroger search results page for milk: a sponsored banner, sponsored product tiles in the grid, and a brand carousel titled 'Is Oatly Quietly Taking Over Your Kroger?'"></video>
       </div>
 
       <!-- Role -->
@@ -190,6 +190,11 @@
     const open = links.classList.toggle('open');
     btn.setAttribute('aria-expanded', open);
   });
+
+  // Respect reduced-motion preferences: don't autoplay case study videos
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+  }
 </script>
 </body>
 </html>

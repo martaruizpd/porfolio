@@ -592,6 +592,7 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
   box-shadow: var(--shadow-card);
   margin-block: var(--space-8);
 }
+video.cs-image { display: block; height: auto; background: var(--color-surface); }
 
 .cs-image--placeholder {
   aspect-ratio: 16/8;
