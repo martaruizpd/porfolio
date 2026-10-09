@@ -610,7 +610,7 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
 /* Stacked media inside one figure (e.g. a still above a video) */
 .cs-figure .cs-media-frame + .cs-image,
 .cs-figure .cs-image + .cs-image,
-.cs-figure .cs-image + .cs-media-frame { margin-top: var(--space-4); }
+.cs-figure .cs-image + .cs-media-frame { margin-top: var(--space-8); }
 
 /* Teal gradient frame around a screen, matching the case study hero images */
 .cs-media-frame {
