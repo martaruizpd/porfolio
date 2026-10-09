@@ -608,6 +608,18 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
 }
 .cs-figure .cs-image { margin-block: 0; }
 
+/* Teal gradient frame around a screen, matching the case study hero images */
+.cs-media-frame {
+  background: linear-gradient(100deg, #2A8C9C 0%, #58A4B2 36%, #82B9C2 67%, #AACFD0 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-8);
+}
+.cs-media-frame .cs-image {
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 28px rgba(10, 43, 56, 0.28);
+}
+
 .cs-image--placeholder {
   aspect-ratio: 16/8;
   background: var(--color-accent-soft);
@@ -884,6 +896,7 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   .contact-grid { grid-template-columns: 1fr; gap: var(--space-8); }
 
   .cs-meta { gap: var(--space-3) var(--space-6); }
+  .cs-media-frame { padding: var(--space-4); }
 
   .footer { flex-direction: column; align-items: flex-start; }
 }
