@@ -642,37 +642,6 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   box-shadow: 0 12px 32px rgba(10, 43, 56, 0.32);
 }
 .cs-figure .cs-media-frame + .cs-media-frame { margin-top: var(--space-8); }
-.cs-media-frame--phones { overflow: hidden; }
-
-/* Phone frame that rises from the bottom edge of the media frame */
-.cs-device {
-  position: relative;
-  align-self: flex-end;
-  width: 42%;
-  max-width: 260px;
-  margin-bottom: calc(-1 * var(--space-8));
-  padding: 30px 8px 0;
-  background: #fff;
-  border-radius: 38px 38px 0 0;
-  box-shadow: 0 12px 32px rgba(10, 43, 56, 0.32);
-}
-.cs-device::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 64px;
-  height: 12px;
-  border-radius: var(--radius-pill);
-  background: var(--color-text);
-}
-.cs-device video {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 22px 22px 0 0;
-}
 
 .cs-image--placeholder {
   aspect-ratio: 16/8;
@@ -952,10 +921,7 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   .cs-meta { gap: var(--space-3) var(--space-6); }
   .cs-media-frame { padding: var(--space-4); }
   .cs-media-frame--phones { gap: var(--space-4); }
-  .cs-phone { width: 46%; border-width: 4px; border-radius: 20px; }
-  .cs-device { width: 46%; margin-bottom: calc(-1 * var(--space-4)); padding: 20px 5px 0; border-radius: 26px 26px 0 0; }
-  .cs-device::before { top: 6px; width: 44px; height: 9px; }
-  .cs-device video { border-radius: 16px 16px 0 0; }
+  .cs-phone { width: 62%; border-width: 4px; border-radius: 22px; }
 
   .footer { flex-direction: column; align-items: flex-start; }
 }
