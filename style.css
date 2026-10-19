@@ -979,21 +979,21 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   .cs-image--placeholder { display: none; }
 }
 
-/* ── More work: compact list of projects without a case study page ── */
+/* ── More work: projects without a case study page, in one panel ── */
 .more-work {
-  list-style: none;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: var(--space-8);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-.more-work li {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  padding: var(--space-6);
-  border-left: 4px solid var(--color-accent);
 }
-.more-work__title { font-size: var(--text-lg); margin-bottom: var(--space-2); }
-.more-work p { color: var(--color-text-muted); line-height: var(--leading-loose); }
+.more-work__item { padding: var(--space-8); }
+.more-work__item + .more-work__item { border-left: 1px solid #E3E6EE; }
+.more-work__title { font-size: var(--text-lg); margin: var(--space-3) 0 var(--space-2); }
+.more-work__item p { color: var(--color-text-muted); line-height: var(--leading-loose); font-size: var(--text-sm); }
+@media (max-width: 768px) {
+  .more-work { grid-template-columns: 1fr; }
+  .more-work__item { padding: var(--space-6); }
+  .more-work__item + .more-work__item { border-left: 0; border-top: 1px solid #E3E6EE; }
+}
