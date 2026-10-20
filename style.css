@@ -997,3 +997,23 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   .more-work__item { padding: var(--space-6); }
   .more-work__item + .more-work__item { border-left: 0; border-top: 1px solid #E3E6EE; }
 }
+
+/* ── Highlighted outcome box (links one case study to another) ── */
+.cs-highlight {
+  margin-top: var(--space-8);
+  padding: var(--space-8);
+  background: var(--color-text);
+  border-radius: var(--radius-lg);
+  color: #fff;
+}
+.cs-section .cs-highlight .cs-highlight__label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+.cs-section .cs-highlight .cs-highlight__text { font-size: var(--text-lg); font-weight: var(--weight-semibold); line-height: var(--leading-normal); color: #fff; }
+.cs-section .cs-highlight .cs-highlight__link { display: inline-block; margin-top: var(--space-4); color: var(--color-accent); font-weight: var(--weight-semibold); }
+.cs-section .cs-highlight .cs-highlight__link:hover { color: #fff; }
