@@ -1021,3 +1021,14 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
 /* Line break only on wider screens (e.g. home headline) */
 .br-wide { display: none; }
 @media (min-width: 769px) { .br-wide { display: inline; } .hero__title { max-width: 22ch; } }
+
+/* Small "Impact" title inside the card result boxes */
+.card__metric-label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: var(--space-1);
+}
