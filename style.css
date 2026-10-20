@@ -1017,3 +1017,7 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
 .cs-section .cs-highlight .cs-highlight__text { font-size: var(--text-lg); font-weight: var(--weight-semibold); line-height: var(--leading-normal); color: #fff; }
 .cs-section .cs-highlight .cs-highlight__link { display: inline-block; margin-top: var(--space-4); color: var(--color-accent); font-weight: var(--weight-semibold); }
 .cs-section .cs-highlight .cs-highlight__link:hover { color: #fff; }
+
+/* Line break only on wider screens (e.g. home headline) */
+.br-wide { display: none; }
+@media (min-width: 769px) { .br-wide { display: inline; } .hero__title { max-width: 22ch; } }
