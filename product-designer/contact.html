@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Marta Ruiz</title>
+  <meta name="description" content="Get in touch with Marta Ruiz — Product Designer based in Spain. Open to full-time product design roles, remote from Spain.">
+  <link rel="stylesheet" href="../style.css?v=2026-10-20c">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Marta Ruiz</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav__cta active">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container--narrow">
+        <p class="hero__eyebrow">Contact</p>
+        <h1 class="hero__title serif" style="font-size: clamp(2rem, 5vw, 3rem);">Let's talk.</h1>
+        <p class="hero__subtitle">
+          I'm open to full-time product design roles, remote from Spain with UK, EU or US teams, and happy to travel. Based in Spain (CET); experienced collaborating with US-based teams.
+        </p>
+
+        <div class="contact-links">
+
+          <a href="mailto:marta.ruizc@outlook.com" class="contact-link">
+            <span class="contact-link__icon">✉️</span>
+            <div>
+              <div class="contact-link__label">Email</div>
+              <div class="contact-link__value">marta.ruizc@outlook.com</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link__icon">💼</span>
+            <div>
+              <div class="contact-link__label">LinkedIn</div>
+              <div class="contact-link__value">linkedin.com/in/marta-ruiz-84880238 ↗</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <!-- ── CV link (experience, skills and education live in the CV) ── -->
+    <section class="section section--alt">
+      <div class="container--narrow">
+        <p class="section__label">Experience, skills &amp; education</p>
+        <h2 class="serif" style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">The full story is in my CV.</h2>
+        <p style="color: var(--color-text-muted); line-height: var(--leading-loose);">
+          Roles, tools, education and certifications, all in one place.
+        </p>
+        <div style="display:flex; gap: var(--space-4); margin-top: var(--space-8); flex-wrap:wrap;">
+          <a href="https://martaruizpd.github.io/marta-ruiz-cv/" target="_blank" rel="noopener" class="btn btn--primary">View my CV ↗</a>
+          <a href="marta-ruiz-cv.pdf" download="Marta-Ruiz-CV.pdf" class="btn btn--outline">Download PDF</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="section">
+    <div class="container footer">
+      <span class="footer__copy">© 2026 Marta Ruiz</span>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav__hamburger');
+    const links = document.querySelector('.nav__links');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
