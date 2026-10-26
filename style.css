@@ -1032,3 +1032,26 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   opacity: 0.75;
   margin-bottom: var(--space-1);
 }
+
+/* ── What I bring: skills table on the home page ── */
+.skills {
+  margin-top: var(--space-8);
+  max-width: 880px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+.skills__row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-6);
+  padding: 1.25rem var(--space-8);
+  align-items: baseline;
+}
+.skills__row + .skills__row { border-top: 1px solid #E3E6EE; }
+.skills__row h3 { font-size: var(--text-base); color: var(--color-accent-text); }
+.skills__row p { color: var(--color-text-muted); line-height: var(--leading-normal); }
+@media (max-width: 768px) {
+  .skills__row { grid-template-columns: 1fr; gap: var(--space-1); padding: var(--space-4) var(--space-6); }
+}
