@@ -231,7 +231,7 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
 
 /* ── Hero — white card with teal circle, like the CV intro ──── */
 .hero {
-  padding: var(--space-16) var(--space-8) var(--space-12);
+  padding: var(--space-12) var(--space-8) var(--space-6);
 }
 
 .hero > .container,
@@ -242,7 +242,7 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
   background: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  padding: var(--space-16) var(--space-12);
+  padding: var(--space-12) var(--space-12);
 }
 
 .hero > .container::after,
@@ -268,11 +268,11 @@ strong, b { color: var(--color-text); font-weight: var(--weight-semibold); }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-accent-text);
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-4);
 }
 
 .hero__title {
-  font-size: clamp(2.25rem, 5.5vw, var(--text-5xl));
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
   font-weight: var(--weight-bold);
   line-height: var(--leading-tight);
   letter-spacing: -0.025em;
@@ -1033,25 +1033,29 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   margin-bottom: var(--space-1);
 }
 
-/* ── What I bring: skills table on the home page ── */
-.skills {
-  margin-top: var(--space-8);
-  max-width: 880px;
+/* ── What I bring: a panel the same width as the hero card, right below it ── */
+.skills-section { padding: 0 var(--space-8) var(--space-12); }
+.skills-card {
+  max-width: var(--max-w-wide);
+  margin-inline: auto;
   background: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  overflow: hidden;
+  padding: var(--space-12);
 }
+.skills { margin-top: var(--space-6); }
 .skills__row {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: var(--space-6);
-  padding: 1.25rem var(--space-8);
+  padding: 1rem 0;
   align-items: baseline;
+  border-top: 1px solid #E3E6EE;
 }
-.skills__row + .skills__row { border-top: 1px solid #E3E6EE; }
 .skills__row h3 { font-size: var(--text-base); color: var(--color-accent-text); }
 .skills__row p { color: var(--color-text-muted); line-height: var(--leading-normal); }
 @media (max-width: 768px) {
-  .skills__row { grid-template-columns: 1fr; gap: var(--space-1); padding: var(--space-4) var(--space-6); }
+  .skills-section { padding: 0 var(--space-4) var(--space-8); }
+  .skills-card { padding: var(--space-8) var(--space-6); }
+  .skills__row { grid-template-columns: 1fr; gap: var(--space-1); }
 }
