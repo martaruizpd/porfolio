@@ -1059,3 +1059,13 @@ video.cs-image { display: block; height: auto; background: var(--color-surface);
   .skills-card { padding: var(--space-8) var(--space-6); }
   .skills__row { grid-template-columns: 1fr; gap: var(--space-1); }
 }
+
+/* Small note under recreated visuals */
+.cs-image:has(+ .cs-note) { margin-bottom: 0; }
+.cs-note {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-8);
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  font-style: italic;
+}
