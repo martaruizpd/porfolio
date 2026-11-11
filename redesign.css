@@ -131,3 +131,6 @@ h1,h2,h3,h4,.card__title{font-family:var(--display);font-weight:500;letter-spaci
 @media (max-width:860px){.h-foot{left:16px}}
 .h-rotator{font-size:clamp(28px,3.4vw,42px);max-width:760px}
 h1.serif,h2.serif,h3.serif{font-family:var(--display);font-weight:500}
+.h-quotes:has(> .h-quote:only-child){grid-template-columns:1fr;max-width:820px;margin-inline:auto}
+.h-quote:only-child{text-align:center;font-family:var(--display);font-size:1.45rem;line-height:1.5;color:var(--color-text);padding:44px 56px}
+.h-quote:only-child cite{font-family:var(--font-sans);font-size:14px;color:var(--color-text-muted)}
