@@ -122,3 +122,11 @@ h1,h2,h3,h4,.card__title{font-family:var(--display);font-weight:500;letter-spaci
 .testimonial blockquote{font-weight:300;font-size:1.05rem;line-height:1.7;color:var(--color-text-muted)}
 .testimonial cite strong{font-weight:500}
 .section--alt{background:transparent}
+
+/* Hero: shorter, contact + location grouped on the left */
+.h-hero{min-height:0;padding:120px 24px 150px}
+.h-foot{justify-content:flex-start;gap:24px}
+@media (max-width:860px){.h-hero{padding:72px 16px 170px}.h-foot{gap:12px}}
+.h-foot{left:calc(max(0px,(100% - 1100px) / 2) + 32px)}
+@media (max-width:860px){.h-foot{left:16px}}
+.h-rotator{font-size:clamp(28px,3.4vw,42px);max-width:760px}
