@@ -135,3 +135,68 @@ h1.serif,h2.serif,h3.serif{font-family:var(--display);font-weight:500}
 .h-quote:only-child{text-align:center;font-family:var(--display);font-size:1.45rem;line-height:1.5;color:var(--color-text);padding:44px 56px}
 .h-quote:only-child cite{font-family:var(--font-sans);font-size:14px;color:var(--color-text-muted)}
 footer.section{border-radius:0}
+
+/* ── Case studies v2 (cs2) ─────────────────────────────────── */
+main.cs2 .cs2-wrap{max-width:1216px;margin-inline:auto;padding-inline:32px}
+main.cs2 .cs2-hero{padding:3.5rem 0 4rem;text-align:center}
+main.cs2 .cs2-hero .cs-hero__back{display:inline-flex;margin-bottom:28px}
+main.cs2 .cs2-hero .cs-hero__back{position:absolute;left:max(32px,calc((100% - 1216px)/2 + 32px))}
+main.cs2 .cs2-pill,main.cs2 .cs2-chapter > .cs-section__label,main.cs2 .cs2-impact > .cs-section__label{display:inline-flex;gap:6px;align-items:center;font-size:13px;font-weight:500;color:var(--color-text);background:#fff;border-radius:99px;padding:8px 16px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 20px}
+main.cs2 .cs2-pill::before{content:'✦';color:var(--color-accent)}
+main.cs2 .cs2-hero .cs-hero__title{font-size:clamp(2rem,4vw,2.6rem);max-width:900px;margin:0 auto 18px}
+main.cs2 .cs2-hero .cs-hero__tags{margin-bottom:40px}
+main.cs2 .cs2-heroimg .cs-image{margin:0;border-radius:22px}
+main.cs2 .cs2-heroimg .cs-note{text-align:left}
+main.cs2 .cs2-overview{display:grid;grid-template-columns:1fr 1fr;gap:72px;padding-block:88px 24px;align-items:start}
+main.cs2 .cs2-h3{font-family:var(--display);font-weight:400;font-size:30px;margin:0 0 16px}
+main.cs2 .cs2-overview p{font-size:18px;line-height:1.7;color:var(--color-text-muted)}
+main.cs2 .cs2-meta{background:var(--panel);border-radius:22px;padding:12px 32px;margin:0}
+main.cs2 .cs2-meta div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+main.cs2 .cs2-meta div:last-child{border-bottom:0}
+main.cs2 .cs2-meta dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#757575;padding-top:3px}
+main.cs2 .cs2-meta dd{margin:0;font-family:var(--display);font-size:18px;color:var(--color-text)}
+main.cs2 .cs-body{padding-block:48px 0}
+main.cs2 .cs-section{margin-bottom:112px}
+main.cs2 .cs-section h2{margin-top:0}
+/* impact band */
+main.cs2 .cs2-impact{background:linear-gradient(180deg,#F4FBFB,#EAF6F6);border-radius:28px;padding:56px 56px 48px;text-align:center}
+main.cs2 .cs2-impact h2{font-size:clamp(1.8rem,3vw,2.4rem);max-width:820px;margin:0 auto 8px}
+main.cs2 .cs2-impact .metrics{background:transparent;padding:0;margin:32px 0 0;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+main.cs2 .cs2-impact .metric{text-align:center;border-left:1px solid #CFE3E3}
+main.cs2 .cs2-impact .metric:first-child{border-left:0}
+main.cs2 .cs2-impact .metric__value{font-size:3rem;color:var(--color-accent-text)}
+/* split sections */
+main.cs2 .cs2-split{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+main.cs2 .cs2-split__head h2{font-weight:400;font-size:30px;line-height:1.25}
+main.cs2 .cs2-split__body > :first-child{margin-top:0}
+main.cs2 .cs2-section .cs-figure{margin-top:48px}
+/* chapters */
+main.cs2 .cs2-chapter{text-align:center}
+main.cs2 .cs2-chapter > .cs-section__label{background:#F1F3F3}
+main.cs2 .cs2-chapter > h2{font-size:clamp(2rem,3.4vw,2.4rem);font-weight:500;max-width:820px;margin:0 auto 20px}
+main.cs2 .cs2-chapter > p{max-width:780px;margin-inline:auto}
+main.cs2 .cs2-cards{display:grid !important;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px !important;margin-top:40px;text-align:left}
+main.cs2 .cs2-cards li{background:var(--panel);border-radius:20px;padding:28px !important;font-size:15px;line-height:1.65}
+main.cs2 .cs2-cards li::before{display:none}
+main.cs2 .cs2-cards li strong{display:block;font-family:var(--display);font-weight:500;font-size:20px;line-height:1.3;margin-bottom:8px}
+main.cs2 .cs2-chapter .cs-figure{margin-top:56px;text-align:left}
+main.cs2 .cs2-chapter .cs-details{text-align:left;margin-top:40px}
+/* key insight */
+main.cs2 .cs-callout{text-align:center;background:none;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;padding:56px 24px;margin:0 0 112px}
+main.cs2 .cs2-kicker{font-size:14px !important;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent-text) !important;font-family:var(--font-sans) !important;margin-bottom:14px}
+main.cs2 .cs-callout p:not(.cs2-kicker){font-size:clamp(1.5rem,2.6vw,1.9rem) !important;max-width:900px;margin-inline:auto}
+@media (max-width:860px){
+  main.cs2 .cs2-wrap{padding-inline:16px}
+  main.cs2 .cs2-hero .cs-hero__back{position:static}
+  main.cs2 .cs2-overview,main.cs2 .cs2-split{grid-template-columns:1fr;gap:28px}
+  main.cs2 .cs2-overview{padding-block:56px 8px}
+  main.cs2 .cs2-impact{padding:36px 20px}
+  main.cs2 .cs2-impact .metric{border-left:0}
+  main.cs2 .cs-section{margin-bottom:72px}
+  main.cs2 .cs2-meta div{grid-template-columns:110px 1fr}
+}
+main.cs2 .cs-highlight{background:#fff;border-radius:20px;padding:28px 32px;margin:36px auto 0;max-width:820px;box-shadow:none;border:1px solid #CFE3E3}
+main.cs2 .cs-section .cs-highlight .cs-highlight__label{color:var(--color-accent-text)}
+main.cs2 .cs-section .cs-highlight .cs-highlight__text{color:var(--color-text);font-family:var(--display);font-weight:400;font-size:1.3rem}
+main.cs2 .cs-section .cs-highlight .cs-highlight__link{color:var(--color-accent-text)}
+main.cs2 .cs-section .cs-highlight .cs-highlight__link:hover{color:var(--color-text)}
