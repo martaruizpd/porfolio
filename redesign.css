@@ -261,3 +261,7 @@ main.cs2 .cs2-overview p:not(.cs2-lead):not(.cs2-sublabel){font-size:17px}
 main.cs2 .cs2-strip{margin-top:48px}
 main.cs2 .cs2-row__media .cs-figure__label{display:flex;flex-direction:column;align-items:center;gap:10px}
 main.cs2 .cs2-row__media .cs-figure__label .tag{display:inline-flex;background:var(--color-accent-text);color:#fff;border:0;border-radius:99px;padding:5px 12px;font-size:11px;letter-spacing:.12em;font-weight:600}
+main.cs2 .cs2-dates{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+main.cs2 .cs2-dates li{padding:0;margin:0;font-size:16px;line-height:1.35}
+main.cs2 .cs2-dates li::before{display:none}
+main.cs2 .cs2-dates span{display:inline-block;min-width:68px;color:var(--color-accent-text);font-family:var(--font-sans);font-size:13px;font-weight:500;letter-spacing:.04em}
