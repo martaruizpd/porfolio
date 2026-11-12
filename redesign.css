@@ -200,3 +200,46 @@ main.cs2 .cs-section .cs-highlight .cs-highlight__label{color:var(--color-accent
 main.cs2 .cs-section .cs-highlight .cs-highlight__text{color:var(--color-text);font-family:var(--display);font-weight:400;font-size:1.3rem}
 main.cs2 .cs-section .cs-highlight .cs-highlight__link{color:var(--color-accent-text)}
 main.cs2 .cs-section .cs-highlight .cs-highlight__link:hover{color:var(--color-text)}
+
+/* ── Case studies: text + image side by side ── */
+main.cs2 .cs2-row{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
+main.cs2 .cs2-row--flip{grid-template-columns:1.15fr 1fr}
+main.cs2 .cs2-row--flip .cs2-row__media{order:-1}
+main.cs2 .cs2-row__text > :first-child{margin-top:0}
+main.cs2 .cs2-row__text h2{font-weight:400;font-size:30px;line-height:1.25}
+main.cs2 .cs2-row__text h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.25;margin:0 0 12px}
+main.cs2 .cs2-row__text p{font-size:17px;line-height:1.7}
+main.cs2 .cs2-section .cs2-row__media,main.cs2 .cs2-chapter .cs2-row__media,main.cs2 .cs2-row__media{margin:0;background:#F4F6F6;border-radius:24px;padding:28px 28px 24px;text-align:center}
+main.cs2 .cs2-row__media .cs-figure__label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6b7273;margin:0 0 18px;font-weight:500}
+main.cs2 .cs2-row__media .cs-figure__label .tag{display:none}
+main.cs2 .cs2-row__media .cs-image{border-radius:12px;margin:0;box-shadow:0 6px 24px rgba(20,50,60,.08)}
+main.cs2 .cs2-row__media .cs-media-frame{background:none;padding:0;margin:0;box-shadow:none}
+main.cs2 .cs2-row__media .cs-phone{width:min(260px,70%)}
+main.cs2 .cs2-row__media .cs-note{margin:14px 0 0;text-align:center}
+main.cs2 .cs2-rows{display:grid;gap:72px;margin-top:56px;text-align:left}
+main.cs2 .cs2-rows > .cs-note{margin:-40px 0 0;text-align:center}
+main.cs2 .cs2-section > .testimonial{margin-top:56px}
+main.cs2 .cs2-chapter .cs-figure--wide{background:#F4F6F6;border-radius:24px;padding:32px}
+main.cs2 .cs2-chapter .cs-figure--wide .cs-image{border-radius:12px}
+@media (max-width:860px){
+  main.cs2 .cs2-row,main.cs2 .cs2-row--flip{grid-template-columns:1fr;gap:28px}
+  main.cs2 .cs2-row--flip .cs2-row__media{order:0}
+  main.cs2 .cs2-row__media{padding:18px 16px 16px}
+  main.cs2 .cs2-rows{gap:56px}
+  main.cs2 .cs2-chapter .cs-figure--wide{padding:16px}
+}
+main.cs2 .cs2-rows .cs2-row__text h3{font-size:28px !important;font-weight:400;margin:0 0 14px}
+main.cs2 .cs2-rows .cs2-row__text p{font-size:17px;max-width:none;margin:0}
+main.cs2 .cs2-row__media .cs-phone{width:210px;max-width:70%}
+main.cs2 .cs2-row__media .cs-zoom{cursor:zoom-in}
+
+/* ── Case studies: alternating full-width grey bands ── */
+main.cs2{overflow-x:clip}
+main.cs2 .cs-body > .cs2-wrap > :is(.cs2-section,.cs2-chapter,.cs-callout){margin:0;padding-block:96px;position:relative;isolation:isolate}
+main.cs2 .cs-body > .cs2-wrap > .cs2-impact{margin-bottom:24px}
+main.cs2 .cs-body > .cs2-wrap > :nth-child(2n+3 of .cs-section,.cs-callout)::before{content:"";position:absolute;inset:0 calc(50% - 50vw);background:#F5F7F7;z-index:-1}
+main.cs2 .cs-body > .cs2-wrap > .cs-callout{border:0;padding-inline:24px}
+main.cs2 .cs-body > .cs2-wrap > :nth-child(2n+3 of .cs-section,.cs-callout) :is(.cs2-row__media,.cs2-cards li,.cs-figure--wide){background:#fff}
+main.cs2 .cs-body > .cs2-wrap > :nth-child(2n+3 of .cs-section,.cs-callout) .cs2-chapter-pill,main.cs2 .cs-body > .cs2-wrap > :nth-child(2n+3 of .cs-section,.cs-callout) .cs-section__label{background:#fff}
+main.cs2 .cs-body > .cs2-wrap > hr.divider{margin-top:0}
+@media (max-width:860px){main.cs2 .cs-body > .cs2-wrap > :is(.cs2-section,.cs2-chapter,.cs-callout){padding-block:64px}}

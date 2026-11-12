@@ -7,7 +7,7 @@
 <title>Sponsored Products &amp; Video Ad Formats at Kroger — Marta Ruiz</title>
 <meta name="description" content="How I designed sponsored product carousels and a video ad format for Kroger across web, iOS and Android — tested with users, A/B tests and a screen-reader study.">
 <link rel="stylesheet" href="style.css?v=2026-11-11">
-<link rel="stylesheet" href="redesign.css?v=2026-11-11f">
+<link rel="stylesheet" href="redesign.css?v=2026-11-12c">
 </head>
 <body>
 
@@ -95,18 +95,16 @@
 
       <!-- Problem -->
       <div class="cs-section cs2-section">
-        <div class="cs2-split">
-          <div class="cs2-split__head">
+        <div class="cs2-row">
+          <div class="cs2-row__text">
         <p class="cs-section__label">The opportunity I took on</p>
         <h2>Competitors were reaching more shoppers. Kroger's ads needed to stand out.</h2>
-          </div>
-          <div class="cs2-split__body">
+
         <p>
           The opportunity came from what competitors were doing: reach more customers and make ads catch their attention. Kroger already had some featured carousels live, but their layout needed rethinking to make sense on both web and mobile.
         </p>
           </div>
-        </div>
-        <figure class="cs-figure">
+          <figure class="cs-figure cs2-row__media">
           <figcaption class="cs-figure__label"><span class="tag">Starting point</span> Product carousels in search results</figcaption>
           <div class="cs-media-frame">
             <img src="images/product-carousel-starting-point.jpg"
@@ -114,6 +112,7 @@
                  class="cs-image">
           </div>
         </figure>
+        </div>
       </div>
 
       <!-- Role -->
@@ -143,29 +142,47 @@
       <div class="cs-section cs2-chapter">
         <p class="cs-section__label">What I designed</p>
         <h2>Ad formats built from what shoppers already know.</h2>
-        <ul class="cs2-cards">
-          <li><strong>Layouts from existing components.</strong> I combined components already on the site that weren't sponsored features, so the new formats stay consistent with the rest of the experience.</li>
-          <li><strong>A clear ad label on video and carousels.</strong> I added a "Featured" label (now "Sponsored" on the live site) so sponsored content is clear while still getting attention.</li>
-          <li><strong>Better carousels on web and mobile.</strong> I enhanced the featured carousels already live, reworking the layout so it makes sense on both.</li>
-        </ul>
-
-        <figure class="cs-figure">
-          <figcaption class="cs-figure__label"><span class="tag">Final experience</span> Sponsored video ad in the product carousel</figcaption>
-          <div class="cs-media-frame">
+        <div class="cs2-rows">
+        <div class="cs2-row">
+          <div class="cs2-row__text">
+            <h3>Layouts from existing components</h3>
+            <p>I combined components already on the site that weren't sponsored features, so the new formats stay consistent with the rest of the experience.</p>
+          </div>
+          <figure class="cs-figure cs2-row__media">
+            <figcaption class="cs-figure__label">Sponsored video carousel in search results</figcaption>
+            <video class="cs-image" src="images/sponsored-final-search.mp4" poster="images/sponsored-final-search-poster.jpg"
+                 autoplay muted loop playsinline controls preload="metadata"
+                 aria-label="Screen recording of Kroger search results for snacks, scrolling down to the sponsored video carousel 'Your Favorite Treat, Reimagined with Protein' among the other results"></video>
+          </figure>
+        </div>
+        <div class="cs2-row cs2-row--flip">
+          <div class="cs2-row__text">
+            <h3>A clear ad label on video and carousels</h3>
+            <p>I added a "Featured" label (now "Sponsored" on the live site) so sponsored content is clear while still getting attention.</p>
+          </div>
+          <figure class="cs-figure cs2-row__media">
+            <figcaption class="cs-figure__label">Sponsored video ad in the product carousel</figcaption>
             <video class="cs-image" src="images/sponsored-final.mp4" poster="images/sponsored-final-poster.jpg"
                    autoplay muted loop playsinline controls preload="metadata"
                    aria-label="Screen recording of a sponsored carousel titled 'Your Favorite Treat, Reimagined with Protein': a muted brand video plays on the left, next to a scrollable list of the brand's products with Add to Cart buttons"></video>
+          </figure>
+        </div>
+        <div class="cs2-row">
+          <div class="cs2-row__text">
+            <h3>Better carousels on web and mobile</h3>
+            <p>I enhanced the featured carousels already live, reworking the layout so it makes sense on both.</p>
           </div>
-          <video class="cs-image" src="images/sponsored-final-search.mp4" poster="images/sponsored-final-search-poster.jpg"
-                 autoplay muted loop playsinline controls preload="metadata"
-                 aria-label="Screen recording of Kroger search results for snacks, scrolling down to the sponsored video carousel 'Your Favorite Treat, Reimagined with Protein' among the other results"></video>
-          <div class="cs-media-frame cs-media-frame--phones">
-            <video class="cs-phone" src="images/sponsored-final-mobile.mp4" poster="images/sponsored-final-mobile-poster.jpg"
+          <figure class="cs-figure cs2-row__media">
+            <figcaption class="cs-figure__label">Sponsored video feature on mobile</figcaption>
+            <div class="cs-media-frame cs-media-frame--phones">
+              <video class="cs-phone" src="images/sponsored-final-mobile.mp4" poster="images/sponsored-final-mobile-poster.jpg"
                    autoplay muted loop playsinline controls preload="metadata"
                    aria-label="Mobile search results showing the full sponsored feature 'Feed Them Like Family': the brand video plays at the top of the card, above a carousel of Blue Buffalo cat food products"></video>
-          </div>
-          <p class="cs-note">Real screens from the live site. Shared because they're already public.</p>
-        </figure>
+            </div>
+          </figure>
+        </div>
+        <p class="cs-note">Real screens from the live site. Shared because they're already public.</p>
+      </div>
       </div>
 
       <!-- Outcome -->
