@@ -271,3 +271,4 @@ main.cs2 .cs2-crop-top{aspect-ratio:2000/1100;object-fit:cover;object-position:t
 main.cs2 .cs2-overview--outcome{grid-template-columns:1.15fr 1fr;padding-top:0}
 main.cs2 .cs2-overview--outcome .cs2-sublabel{margin-top:0}
 @media (max-width:860px){main.cs2 .cs2-overview--outcome{grid-template-columns:1fr}main.cs2 .cs2-overview--outcome .cs2-row__media{order:2}}
+main.cs2 .cs-note--small{font-size:13px}
