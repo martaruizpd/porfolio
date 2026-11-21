@@ -1,126 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Marta Ruiz</title>
-  <meta name="description" content="Product Designer with 10+ years in design. 5+ years at Kroger via Empathy.co. Based in Spain. Open to product design roles, remote from Spain with UK, EU or US teams.">
-  <link rel="stylesheet" href="../style.css?v=2026-11-11">
-<link rel="stylesheet" href="../redesign.css?v=2026-11-20a">
+<title>Marta Ruiz — Product Designer</title>
+<link rel="canonical" href="https://martaruizpd.github.io/porfolio/about.html">
+<meta http-equiv="refresh" content="0; url=../about.html">
+<script>location.replace("../about.html" + location.hash);</script>
 </head>
 <body>
-
-  <!-- ── Navigation ── -->
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">Marta Ruiz</a>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav__links" role="list">
-        <li><a href="work.html">Work</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html" class="nav__cta">Get in touch</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-
-    <!-- ── About hero ── -->
-    <section class="hero" style="padding-bottom: var(--space-16);">
-      <div class="container">
-        <h1 class="hero__title serif" style="font-size: clamp(2rem, 5vw, 3rem);">About me</h1>
-      </div>
-    </section>
-
-    <!-- ── Bio + photo ── -->
-    <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="about-grid">
-
-          <!-- Photo -->
-          <div>
-            <img src="../Profile picture linkedin 2.png" alt="Marta Ruiz" class="about-photo">
-          </div>
-
-          <!-- Bio text -->
-          <div>
-            <p class="section__label">Bio</p>
-
-            <p style="color: var(--color-text-muted); line-height: var(--leading-loose);">
-              Hi, I'm Marta! :)
-            </p>
-            <p style="color: var(--color-text-muted); line-height: var(--leading-loose);">
-              I'm a product designer with 10+ years of experience, based in Spain. For 5+ years I was embedded in Kroger's product org via Empathy.co, designing the search and ads experiences that tens of millions of people use for their grocery shopping.
-            </p>
-            <p style="color: var(--color-text-muted); line-height: var(--leading-loose);">
-              I'm happiest when I'm close to the people I design for. Research and testing are at the core of my work, from moderated and unmoderated studies, to A/B tests and accessibility evaluation, and I'm comfortable explaining my design decisions to senior stakeholders up to Director/VP level.
-            </p>
-            <p style="color: var(--color-text-muted); line-height: var(--leading-loose);">
-              I like to get involved early: doing research, gathering requirements with the team, designing wireframes, high-fidelity screens and workflows, keeping everyone up to date as things change, and seeing an initiative through to launch.
-            </p>
-            <p style="color: var(--color-text-muted); line-height: var(--leading-loose);">
-              Outside design, I love spending time with my family and doing sport. I've been running for many years now, mostly 10Ks and half marathons. Running is how I recharge my batteries.
-            </p>
-
-            <div style="display:flex; gap: var(--space-4); margin-top: var(--space-8); flex-wrap:wrap;">
-              <a href="contact.html" class="btn btn--primary">Get in touch</a>
-              <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn ↗</a>
-            </div>
-
-            <!-- Testimonial -->
-            <div class="testimonial">
-              <blockquote>Marta is a fantastic designer with an exceptional eye for detail and a thoughtful approach to solving the right problems. She brings a strong customer-first mindset and uses data to inform her design decisions and conversations with stakeholders.</blockquote>
-              <cite>
-                <strong>Nicola Cimino</strong>
-                Product &amp; Experience Leader, Kroger
-              </cite>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CV link (experience, skills and education live in the CV) ── -->
-    <section class="section section--alt">
-      <div class="container--narrow">
-        <p class="section__label">Experience, skills &amp; education</p>
-        <h2 class="serif" style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">The full story is in my CV.</h2>
-        <p style="color: var(--color-text-muted); line-height: var(--leading-loose);">
-          Roles, tools, education and certifications, all in one place.
-        </p>
-        <div style="display:flex; gap: var(--space-4); margin-top: var(--space-8); flex-wrap:wrap;">
-          <a href="https://martaruizpd.github.io/marta-ruiz-cv/product-designer/" target="_blank" rel="noopener" class="btn btn--primary">View my CV ↗</a>
-          <a href="marta-ruiz-cv-product-designer.pdf" download="Marta-Ruiz-CV.pdf" class="btn btn--outline">Download PDF</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ── Footer ── -->
-  <footer class="section">
-    <div class="container footer">
-      <span class="footer__copy">© 2026 Marta Ruiz</span>
-      <nav class="footer__links" aria-label="Footer navigation">
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://www.linkedin.com/in/marta-ruiz-84880238/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    const btn = document.querySelector('.nav__hamburger');
-    const links = document.querySelector('.nav__links');
-    btn.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open);
-    });
-  </script>
+<p>This page has moved. <a href="../about.html">Go to Marta Ruiz's portfolio</a>.</p>
 </body>
 </html>
